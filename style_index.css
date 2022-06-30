@@ -1,0 +1,291 @@
+/*Configuração inicial e completa*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: #268a26;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Urbanist;
+}
+
+/*----------Media Queries - Responsividade Lateral----------*/
+
+/*Cabeçalho - Chamada de Marketing*/
+header{
+    width: 100%;
+    height: 5.5vh;
+    padding:1.5vh 0px 2vh;
+    font-size: 2vw;
+    margin: 0px;
+    text-align: center;
+}
+
+/*Main - Construção do formulário e Apresentação da empresa*/
+main{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./pictures/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+            /*Construção do formulário*/
+.left{
+    width: 50%;
+    height: 61vh;
+    padding: 12vh auto;
+}
+
+.left h3{
+    width: 52%;
+    margin-left: 21%;
+    height: 12vh;
+    padding: 2vh 3%;
+    font-size: 1.4vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.left h5{
+    width: 52%;
+    margin-left: 21%;
+    height: 13vh;
+    padding: 2vh 3%;
+    font-size: 1.2vw;
+    text-indent: 2.5vw;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.left form{
+    width: 52%;
+    margin-left: 21%;
+    padding: 2vh 3%;
+    height: 24vh;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+form #Nome, form #Email{
+    padding-left: 5%;
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 2vh;
+    height: 3.5vh;
+    font-size: 1.3vw;
+    background-color: black;
+    color: #268a26;
+    border: 0.2vw solid #268a26;
+    border-radius: 7vw;
+}
+
+#Nome:hover, #Email:hover{
+    border: 0.2vw solid black;
+    background-color: #268a26;
+}
+
+form #Botao{
+    margin-top: 2vh;
+    height: 4vh;
+    width: 30%;
+    font-size: 1.2vw;
+    margin-left: 35%;
+    background-color: #268a26;
+    border: 0.2vw solid black;
+    border-radius: 2vw;
+}
+
+#Botao:hover{
+    border: 0.2vw solid #268a26;
+    color: #268a26;
+    background-color: black;
+}
+
+            /*Apresentação da Empresa*/
+.right{
+    width: 50%;
+    height: 85vh;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img{
+    margin-top: 12vh;
+    height: 25vh;
+    padding: auto 2%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom: 0.5vh solid #268a26;
+}
+            
+.right h3{
+    width: 90%;
+    padding:5vh 0px 0px 10%;
+    height: 6vh;
+    font-size: 1.3vw;
+}
+            
+.right h5{
+    width: 80%;
+    padding:2vh 10% 8vh;
+    height: 26vh;
+    font-size: 1.2vw;
+    text-indent: 3.5vw;
+}
+
+/*Rodapé - Midias Sociais e Copyright*/
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+}
+
+footer a{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 7%;
+}
+
+footer img{
+    width: 25%;
+}
+
+footer p{
+    color: #268a26;
+    width: 20%;
+    padding-left: 1%;
+    font-size: 0.95vw;
+}
+
+/*----------Media Queries - Responsividade vertical----------*/
+
+@media all and (orientation: portrait){
+/*Cabeçalho - Chamada de Marketing*/
+header{
+    width: 100%;
+    height: 6vh;
+    padding:2vh 0px 2vh;
+    font-size: 4.5vw;
+    margin: 0px;
+    text-align: center;
+}
+
+/*Main - Apresentação e construção do formulário*/
+            /*Construção do formulário*/
+.left{
+    height: 50vh;
+    width: 100%;
+}
+
+.left h3{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: 10vh;
+    font-size: 4.5vw;
+    margin: 3vh 7% 0vh;
+    padding: 2vh 3% 1vh;
+}
+
+.left h5{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: 10vh;
+    font-size: 3vw;
+    text-indent: 8vw;
+    margin: 0px 7% 0vh;
+    padding: 2vh 3% 0vh;
+}
+
+.left form{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: 15.5vh;
+    font-size: 4.5vw;
+    margin: 0vh 7% 0vh;
+    padding: 1vh 3% 1vh;
+}
+
+form #Nome, form #Email{
+    padding-left: 5%;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 1vh;
+    font-size: 3vw;
+}
+
+form #Botao{
+    margin-top: 1.2vh;
+    height: 4vh;
+    font-size: 3vw;
+}
+
+            /*Apresentação da Empresa*/
+.right{
+    width: 100%;
+    height: 33vh;
+}
+
+.right img{
+    margin: 0px;
+    padding: 2vh 5% 2vh;
+    height: 9vh;
+}
+
+.right h3{
+    text-align: center;
+    font-size: 5vw;
+    margin: 0px;
+    padding: 2vh 0px 0px;
+    height: 4vh;
+    width: 100%;
+}
+
+.right h5{
+    font-size: 2.5vw;
+    text-indent: 7vw;
+    margin: 0vh 7% 0vh;
+    padding: 2vh 3% 1vh;
+    height: 12vh;
+    width: 80%;
+}
+
+/*Rodapé - Midias Sociais e Copyright*/
+footer a{
+    width: 15%;
+    height: 3vh;
+}
+
+footer p{
+    width: 100%;
+    height: 2vh;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+}
+
+
+@font-face {
+    font-family: Urbanist;
+    src: url(./font_text/Urbanist.ttf);
+}
