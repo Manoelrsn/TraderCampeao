@@ -1,0 +1,279 @@
+
+/*Media Queries - horizontal orientation*/
+
+/*-Class A General - (Body)-*/
+*{
+    border: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Urbanist;
+    color: #268a26;
+}
+
+    /*--Class B1 - (header)--*/
+    header{
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    header p{
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /*--Class B2 - (main)--*/
+
+        /*---Class B2 - General (DisplayLeft and DisplayRight)---*/
+        main{
+            width: 100vw;
+            height: 86vh;
+            display: flex;
+            flex-flow: row wrap;
+            background-image: url(./image/background.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+        }
+
+        /*---Class B2 - Parte A (DisplayLeft)---*/
+        .DisplayLeft{
+            width: 30vw;
+            height: 60vh;
+            margin: 13vh 10vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .DisplayLeft h3{
+            text-align: center;
+            padding: 3vh 2vw;
+            width: 30vw;
+            font-size: 1.4vw;
+        }
+        .DisplayLeft h5{
+            width: 30vw;
+            padding: 2vh 2vw;
+            font-size: 1.2vw;
+            text-indent: 2.5vw;
+            text-align: justify;
+        }
+        .DisplayLeft form{
+            width: 26vw;
+            padding: 2vh 2vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .DisplayLeft form #Name, #Email{
+            width: 15vw;
+            padding: 1vh 2vw;
+            margin: 1vh;
+            font-size: 1.3vw;
+            background-color: black;
+            color: #268a26;
+            border: 0.2vw solid #268a26;
+            border-radius: 7vw;
+        }
+        .DisplayLeft form #Buttom{
+            width: 10vw;
+            padding: 1vh 2vw;
+            font-size: 1.2vw;
+            background-color: #268a26;
+            border: 0.2vw solid black;
+            border-radius: 2vw;
+        }
+        .DisplayLeft form #Buttom:hover{    
+            border: 0.2vw solid #268a26;
+            color: #268a26;
+            background-color: black;
+        }
+
+        /*---Class B2 - Parte B (DisplayRight)---*/
+        .DisplayRight{
+            width: 40vw;
+            height: 60vh;
+            margin: 13vh 5vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+        .DisplayRight img{
+            height: 25vh;
+            width: 25vh;
+            border-top-left-radius: 15%;
+            border-top-right-radius: 15%;
+            border-bottom: 0.5vh solid #268a26;
+        }
+        .DisplayRight h3{
+            width: 40vw;
+            text-align: justify;
+            text-indent: 2vw;
+            font-size: 1.3vw;
+        }
+        .DisplayRight h5{
+            padding: 2vh 2vw;
+            font-size: 1.2vw;
+            text-align: justify;
+            text-indent: 3.5vw;
+        }
+
+    /*--Class B2 - (footer)--*/
+    footer{
+        width: 100vw;
+        height: 6vh;
+        background-color: black;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    footer .links{
+        height: 6vh;
+        width: 20vw;
+        padding-left: 30vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        align-items: center;
+    }
+    footer .links a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5vh;
+        height: 5vh;
+    }
+    footer .links a img{
+        width: 4vh;
+        height: 4vh;
+    }
+    footer p{
+        width: 49vw;
+        padding-left: 1vw;
+        font-size: 1vw;
+    }
+
+@media all and (orientation: portrait){
+/*-Class A General - (Body)-*/
+        
+    /*--Class B1 - (header)--*/
+    header{
+        height: 10vh;
+    }
+    header p{
+        padding: 0vh 2vw;
+        font-size: 6vw;
+    }
+
+    /*--Class B2 - (main)--*/
+
+        /*---Class B2 - General (DisplayLeft and DisplayRight)---*/
+        main{
+            height: 83vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items:flex-start;
+        }
+
+        /*---Class B2 - Parte A (DisplayLeft)---*/
+        .DisplayLeft{
+            width: 80vw;
+            height: 40vh;
+            margin: 10vw 10vw 0vh;
+            padding: 2vh 0vw;
+        }
+        .DisplayLeft h3{
+            width: 80vw;
+            padding: 1vh 1vw;
+            font-size: 4.5vw;
+        }
+        .DisplayLeft h5{
+            width: 80vw;
+            padding: 1vh 2.5vw;
+            font-size: 3.5vw;
+            text-indent: 7vw;
+        }
+        .DisplayLeft form{
+            width: 80vw;
+            padding: 1vh 0vw;
+        }
+        .DisplayLeft form #Name, #Email{
+            width: 40vw;
+            padding: 1vh 2vw;
+            margin: 1vh 2vh;
+            font-size: 3vw;
+        } 
+        .DisplayLeft form #Buttom{
+            width: 30vw;
+            margin-top: 1vh;
+            padding: 1vh 2vh;
+            font-size: 3vw;
+        }
+
+        /*---Class B2 - Parte B (DisplayRight)---*/
+        .DisplayRight{
+            width: 80vw;
+            height: 21vh;
+            margin: 12vh 10vw 0vh;
+            justify-content: space-around;
+        }
+        .DisplayRight img{
+            height: 8vh;
+            width: 8vh;
+        }
+        .DisplayRight h3{
+            width: 40vw;
+            text-indent: 2vw;
+            font-size: 4vw;
+        }
+        .DisplayRight h5{
+            padding: 2vh 2vw;
+            font-size: 2.7vw;
+            text-indent: 8vw;
+        }
+
+    /*--Class B2 - (footer)--*/
+    footer{
+        width: 100vw;
+        height: 7vh;
+    }
+    footer .links{
+        height: 4.5vh;
+        width: 50vw;
+        margin: 0vh 25vw;
+        padding-left: 0vw;
+    }
+    footer .links a{
+        width: 4vh;
+        height: 4vh;
+    }
+    footer .links a img{
+        width: 3vh;
+        height: 3vh;
+    }
+    footer p{
+        height: 2vh;
+        width: 100vw;
+        text-align: center;
+        padding-left: 0vw;
+        padding-top: 0.5vh;
+        font-size: 2.5vw;
+    }
+}
+
+
+@font-face {
+    font-family: Urbanist;
+    src: url(./font_text/Urbanist.ttf);
+}
